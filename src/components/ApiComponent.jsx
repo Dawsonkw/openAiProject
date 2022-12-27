@@ -1,10 +1,10 @@
 import React from "react";
 import { Configuration, OpenAIApi } from "openai";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const configuration = new Configuration({
     organization: "org-idL50UqM4ERYZcMMCUKvyvye",
-    apiKey: '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',
+    apiKey: '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',
 });
 const openai = new OpenAIApi(configuration);
 
@@ -34,7 +34,7 @@ const ApiComponent = () => {
       </form>
       <span>
       <h1 className="text-teal-800 text-2xl">The AI is asked a question and logs a response here.</h1>
-      <p className="p-10 flex justify-center">{completion}</p>
+      <p className="ring-gray-300 p-10 flex justify-center">{completion}</p>
       </span>
     </div>
   );
